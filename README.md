@@ -1,5 +1,5 @@
 
-# Crie uma venv, ative
+# Crie uma venv, ative e instale as dependencias
 ```bash
 python -m venv venv
 venv/scripts/activate
