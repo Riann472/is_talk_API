@@ -119,7 +119,6 @@ async def is_talk(files: List[UploadFile] = File(...)):
     audio_bytes = await audio.read()
     audio_buffer = io.BytesIO(audio_bytes)
 
-    print(audio)
     try:
         waveform, sr = librosa.load(audio_buffer, sr=16000)
     except Exception as e:
