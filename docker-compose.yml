@@ -1,0 +1,9 @@
+services:
+  server-container:
+    build: "./"
+    container_name: server-container
+    restart: always
+    volumes: 
+      - ./server.py:/server/server.py
+    ports: 
+      - "8000:8000"
